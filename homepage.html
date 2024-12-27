@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>FeelFlourish</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="C:\Users\Shivanivithya\Pictures\logo.jpg" width="125px">
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="C:\Users\Shivanivithya\Documents\about us.html">About us</a></li>
+                            <li><a href="C:\Users\Shivanivithya\Documents\mainpage of food.html">Food Product</a></li>
+                            <li><a href="C:\Users\Shivanivithya\Documents\fff.html">Skin Product</a></li>
+                            <li><a href="">Cart</a></li>
+                            <li><a href="C:\Users\Shivanivithya\Documents\paayment.html">Payment</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>ORGANIC PRODUCT FOR<br>SKIN AND FOOD</h1>
+                <p>Experience the purity of nature with our organic skincare products.<br>Gentle,Effective and eco-friendly.</p>
+                <a href="" class="btn">Explore Now &#8594;</a>
+            </div>
+       	<div class="slideshow-container">
+  <div class="slide">
+    <img src="C:\Users\Shivanivithya\Downloads\WhatsApp Image 2024-12-27 at 09.25.38_e39406d3.jpg"  width="800px" heigth="400px"alt="Image 1">
+  </div>
+  <div class="slide">
+    <img src="C:\Users\Shivanivithya\Downloads\image3.webp"  alt="Image 2">
+  </div>
+  
+  <a class="prev" onclick="prevSlide()">&#10094;</a>
+  <a class="next" onclick="nextSlide()">&#10095;</a>
+</div>
+	
+	<style>
+	*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    margin: 0;
+    background-color: #4ca736;
+}
+.logo{
+    margin-left: 0px;
+    height:124px;
+}
+.navbar{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+nav {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;      /* Center align vertically */
+    background-color: #4ca736; /* Adjust based on your design */
+    padding: 10px 20px;   
+    height: 124px;
+    width: 100%;         /* Optional spacing */
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+}
+
+nav ul li {
+    margin: 0 15px;
+    font-size: medium;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(246, 244, 244); /* Adjust the color */
+    font-size: 16px;
+}
+
+.container{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: radial-gradient(#fff,#a8e063);
+
+}
+
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #4ca736;
+    color: #fdfcfc;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+    text-decoration: none;
+}
+.btn:hover{
+    background: #005d0e;
+
+}
+
+footer{
+    background-color: #4ca736;
+    color: #fff;
+    text-align: center;
+    height: 37px;
+    padding: 10px;
+}
+</style>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);function plusSlide(n) {
+  showSlides(slideIndex += n);
+}function showSlides(n) {
+  let i;
+  const slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}function prevSlide() {
+  plusSlide(-1);
+}function nextSlide() {
+  plusSlide(1);
+}
+</script>
+    </body>
+    <footer>
+        <p>&copy; 2024 FeelFlourish. All Rights Reserved.</p>
+    </footer>
+</html>
